@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'main.css')}}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | {% block title %}{% endblock %}</title>
+   
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="/kasia">About me</a>
+        <a href="/experience">Experience</a>
+        <a href="/contact">Contact</a>
+        <button onclick="mode()" class="mode">light mode</button>
+    </nav>
+  
+    {% block content %}
+  
+    {% endblock  %}
+    <footer > Copyright: © 2022 </footer>
+    <script> function mode(){
+        let page = document.body;
+        page.classList.toggle("dark-mode")
+    }</script>
+    
+</body>
+</html>

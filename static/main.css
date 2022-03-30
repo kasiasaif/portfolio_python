@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+
+
+html{
+    background-image: url('../static/images/dark.png');
+    background-repeat: no-repeat;
+    
+    height:100%;
+    width: 100%;
+ 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  color: rgb(234, 229, 238);
+    
+   font-family: 'Josefin Sans', sans-serif;
+}
+h1{
+   
+}
+h2{
+   
+}
+a{
+    
+    font-weight: 300; 
+    letter-spacing: 2px; 
+    text-decoration: none; 
+    font-size: 20px;
+    padding: 20px 5px; 
+    margin: 10px;
+    color: #E06C9F;
+
+    
+    
+}
+a:hover{
+    color: rgb(241, 159, 35);
+    
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: space-between;
+
+    /* display: flex; 
+    flex-direction: reverse-row;
+    justify-items: flex-end; */
+    
+  
+
+  }
+.container{
+ 
+margin-left: 15%;
+    margin-right: 20%;
+    margin-top: 10%; 
+
+}
+.about{
+   
+    
+    font-size: larger;
+    font-size: 25px;
+    padding-top: 30px;
+    width: 70rem;
+    
+
+  }
+  .hello{
+      font-size: 120px;
+      font-family: 'Dancing Script', cursive;
+      
+  }
+  .Iam{
+    font-size: 35px;
+    
+    
+  }
+  span{
+    font-size: 35px;
+   letter-spacing: 3px;
+  }
+  .junior{
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .cn{
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  float: right;
+  }
+  .sda{
+    border-radius: 10px;
+    
+  }
+  .l2{
+    width: 20rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px 0 #fffeff, 0 6px 20px 0 #aca8ab;
+    margin: 5px 20px 5px 5px;
+  }
+  img{
+  
+    
+  }
+ 
+  .master{
+    font-family: 'Josefin Sans', sans-serif,monospace;
+    box-shadow: 20px rgb(247, 241, 241);
+    font-size: 20px;
+    width:19rem;
+    padding: 1rem 0 0 ;
+    border: solid;
+    /* border-color: #e4acdb; */
+    border: none;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    ;
+  box-shadow: 0 10px 15px 0 #fffeff, 0 6px 20px 0 #ffbbf9;
+
+  }
+  .box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    /* padding-left: 26rem; */
+    /* padding-right: 2rem; */
+  }
+  .title{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 18rem;}
+   .first{
+   
+
+   }
+.second{
+  width: 20%;
+
+}
+    
+  
+  .one{
+    margin-top: 10px;
+  }
+  .box2{
+    margin-top: 20%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .certificates{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 8rem;
+   
+
+  }
+  .self{
+    
+   height: 400px;
+   width: 200px;
+  float: right;
+  margin-top: -15%;
+ 
+  }
+  .selfie{
+    
+    height: 500px;
+    width: 400px;
+   float: right;
+   margin-top: -15%;
+  
+   }
+
+  .dark-mode{
+    background-image:url("./images/blue.jpg") ;
+    background-repeat: no-repeat;
+    
+    height:100%;
+    width: 100%;
+   margin: 0;
+    /* background: black url(back2.png) center center no-repeat;; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  color: rgb(80, 78, 78);
+  
+
+    
+  }
+  .mode{
+    padding: 0.5rem 1rem;
+    font-family: 'Jura', sans-serif;
+    border-radius: 10px;
+    background-color: #b5179e;
+    color: rgb(234, 229, 238);
+    transition: 0.5s;
+    border: 3px solid transparent;
+    font-size:12px;
+  }
+  .mode:hover{
+    background-color: #f537d8;
+    color: rgb(234, 229, 238);
+    transform: 1s;
+  }
+  .contact{
+    width: 10rem;
+    height: 10rem;
+  }
+  footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
