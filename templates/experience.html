@@ -51,9 +51,13 @@ Experience
 </div>
 <button onclick="resetImg()">Reset</button>
 <div class="certificates">
-<img class="l2" src="../static/images/l2.jpg"  id="img" onclick="enlargeImg()">
+  <img src="../static/images/l2.jpg" class="l2" id="img" alt="..." onclick="window.open('../static/images/l2.jpg', '_blank');" />
+  <img src="../static/images/java_from_scratch_Page_1.jpg"  class="l2" id="img" alt="..." onclick="window.open('../static/images/java_from_scratch_Page_1.jpg', '_blank');" />
+  <img src="../static/images/scrum.jpg"  class="l2" id="img" alt="..." onclick="window.open('../static/images/scrum.jpg', '_blank');" />
+
+<!-- <img class="l2" src="../static/images/l2.jpg"  id="img" onclick="enlargeImg()">
 <img class="l2" src="../static/images/java_from_scratch_Page_1.jpg"  id="img" onclick="enlargeImg()">
-<img class="l2" src="../static/images/scrum.jpg"  id="img" onclick="enlargeImg()">
+<img class="l2" src="../static/images/scrum.jpg"  id="img" onclick="enlargeImg()"> -->
 
 
 </div>
@@ -72,7 +76,9 @@ Experience
       // Set image size to original
       img.style.transform = "scale(1)";
       img.style.transition = "transform 0.25s ease";
-    }
-  </script>
+    }</script>
+    
+  
+  
 
 {% endblock %}
