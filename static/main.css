@@ -5,18 +5,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
 
 
-html{
+
+body{
     background-image: url('../static/images/blue.jpg');
     background-repeat: no-repeat;
-    
- 
     margin: 0;
    
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
-   color: rgb(80, 78, 78);
+   /* color: rgb(80, 78, 78); */
+
+/* new sett */
+   color: var(--color-main);
+   transition: background-color 0.3s;
+   /* background-image: url("back.jpg"); */
 
 
 
@@ -35,6 +39,55 @@ html{
     
    font-family: 'Josefin Sans', sans-serif;
 }
+
+
+
+
+
+html {
+  font-family: sans-serif;
+  margin: 0;
+  /* background-image: url('./blue.jpg'); */
+}
+
+#toggle-btn {
+  padding: 0.5em;
+  background: transparent;
+  border: 2px solid #74abee;
+  border-radius: 10px;
+  color:#E06C9F; 
+  
+ 
+  
+}
+
+#toggle-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* .dark-mode-toggle {
+  background: #000;
+  color: #fff;
+} */
+
+/* #theme {
+  width: 100vw;
+  height: 100vh;
+} */
+
+.dark-mode-theme {
+  background: linear-gradient(to top, rgba(255,0,0,0), #002855);
+  color: #fff;
+}
+
+
+
+
+
+
+
+
 
 a{
     
@@ -321,8 +374,8 @@ svg{
    }
 
   .dark-mode{
-    background-image:url("./images/blue.jpg") ;
-    background: linear-gradient(to top, rgba(255,0,0,0), #002855);
+    /* background-image:url("./images/blue.jpg") ;
+    background: linear-gradient(to top, rgba(255,0,0,0), #002855); */
     /* background-repeat: no-repeat;
     background-size: auto; */
   background-repeat: no-repeat;
@@ -346,7 +399,7 @@ svg{
   
 
 
-  .mode{
+  /* .mode{
     padding: 0.5rem 1rem;
     font-family: 'Jura', sans-serif;
     border-radius: 10px;
@@ -361,7 +414,7 @@ svg{
     color: rgb(234, 229, 238);
     transform: 1s;
     transform: translateY(5px);
-  }
+  } */
   .contact{
     width: 10rem;
     height: 10rem;
@@ -417,7 +470,8 @@ svg{
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-  align-content: space-between;
+  align-content:space-around;
+  margin-right: 10px;
     /* background-color: #333; */
   }
   

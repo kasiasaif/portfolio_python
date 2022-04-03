@@ -24,6 +24,10 @@ def contact_page():
 def experience_page():
     return render_template("experience.html")
 
+@app.route("/projects")
+def projects_page():
+    return render_template("projects.html")
+
 @app.route("/home")
 def home_redirect():
     return redirect(url_for("home"))
