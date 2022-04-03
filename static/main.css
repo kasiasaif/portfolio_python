@@ -3,11 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
 
 
 body{
-    background-image: url('../static/images/blue.jpg');
+    background-image: url('../static/images/back.jpg');
+    
     background-repeat: no-repeat;
     margin: 0;
    
@@ -20,6 +21,7 @@ body{
 /* new sett */
    color: var(--color-main);
    transition: background-color 0.3s;
+  
    /* background-image: url("back.jpg"); */
 
 
@@ -47,6 +49,8 @@ body{
 html {
   font-family: sans-serif;
   margin: 0;
+ 
+  /* min-width: 400px; */
   /* background-image: url('./blue.jpg'); */
 }
 
@@ -103,6 +107,9 @@ a:hover{
     color: rgb(241, 159, 35);
     
 }
+a:active{
+  color: rgb(201, 132, 28);
+}
 /* .navbar {
   overflow: hidden;
   float: left;
@@ -127,20 +134,31 @@ a:hover{
 
   /* } */ 
 .container{
+  
+  
+     
  
     margin-left: 15%;
     margin-right: 30%;
     margin-top: 10%; 
+    text-align: justify;
+   
+
+}
+.container:after{
+  content: "";
+  display: inline-block;
+  width: 100%;
 
 }
 .about{
    
-    
+  
     font-size: larger;
     font-size: 25px;
     padding-top: 30px;
     width: 40rem;
-    padding-bottom: 400px;
+    
     
     /* background-color: #666066; */
 
@@ -150,11 +168,12 @@ a:hover{
   .dev{
    
    
-    
+   
       font-size: larger;
       font-size: 25px;
       padding-top: 30px;
       width: 40rem;
+      
       /* padding-bottom: 200px; */
       
       /* background-color: #666066; */
@@ -206,7 +225,76 @@ a:hover{
     margin: 5px 20px 5px 5px;
     box-shadow:  0 6px 20px 0 #999999;
   }
+  /* .cv{
+    width: 6rem;
+    padding: 0.4rem;
+    border-radius: 15px;
+    margin: 5px 20px 5px 5px;
+    margin-bottom: 400px;
+    
+    border: 2px solid #eef2f5;
+    color: #fcf8fa;
+  }
+  .cv:hover{
+    background: white;
+     color: #0f1481;
+
+
+  } */
+
+
+/* CSS */
+
+
+
+
+.cv{
+  font-family: 'Rubik Microbe', cursive;
+  display: block;
+  background: transparent;
+  width: 7rem;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
   
+  color: rgb(244, 238, 238);
+  border: 2px solid rgb(245, 242, 242);
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  border-radius: 10px;
+  margin-bottom:20rem;
+  margin-top: 1rem;
+  margin-left: 60%;
+}
+.space{
+  margin-bottom:20rem;
+}
+
+
+
+.cv:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #f3eeef8b;
+  transition: all .35s;
+  border-radius: 15px;
+}
+
+.cv:hover{
+  color: #fff;
+  border-radius: 15px;
+}
+
+.cv:hover:after{
+  width: 100%;
+  border-radius: 15px;
+}
  
   .master{
     
@@ -286,7 +374,7 @@ a:hover{
    margin: 0;
 
   }
-  .self{
+  /* .self{
    height: 400px;
    width: 200px;
   float: right;
@@ -295,7 +383,7 @@ a:hover{
   filter: drop-shadow(10px 10px 10px #ffacc5);
   
  
-  }
+  } */
 
 
 
@@ -362,11 +450,11 @@ svg{
 
 
 
-
   .selfie{
-    
-    height: 500px;
-    width: 400px;
+  /* margin-right: 5%; */
+  height: 500px;
+  width: 400px;
+  /* padding:100px; */
    float: right;
    margin-top: -15%;
    filter: drop-shadow(10px 10px 10px #ffacc5);
@@ -526,6 +614,9 @@ svg{
     }
     .hello{
       font-size: 3rem;
+    }
+    .selfie{
+      margin-left: -50px;
     }
    
     
