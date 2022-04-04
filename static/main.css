@@ -4,10 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200&display=swap');
+
 
 
 body{
-    background-image: url('../static/images/back.jpg');
+    background-image: url('../static/images/short.jpg');
     
     background-repeat: no-repeat;
     margin: 0;
@@ -16,10 +20,10 @@ body{
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
-   /* color: rgb(80, 78, 78); */
+   color: rgb(78, 78, 78);
 
 /* new sett */
-   color: var(--color-main);
+   
    transition: background-color 0.3s;
   
    /* background-image: url("back.jpg"); */
@@ -137,7 +141,7 @@ a:active{
   
   
      
- 
+   
     margin-left: 15%;
     margin-right: 30%;
     margin-top: 10%; 
@@ -169,7 +173,7 @@ a:active{
    
    
    
-      font-size: larger;
+      /* font-size: larger; */
       font-size: 25px;
       padding-top: 30px;
       width: 40rem;
@@ -184,13 +188,15 @@ a:active{
   }
   .hello{
     
-      font-size: 7.5rem;
-      font-family: 'Dancing Script', cursive;
-      
-      
-      
-      
+      font-size: 6.5rem;
+      font-family: 'Montserrat Alternates', sans-serif;  
   }
+  #hello_id{
+    /* font-size: 7rem; */
+    /* letter-spacing: 10px; */
+    /* padding-left: -100px; */
+  }
+ 
   .Iam{
     font-size: 35px;
     
@@ -203,8 +209,8 @@ a:active{
    letter-spacing: 3px;
   }
   .junior{
-    font-size: 15px;
-    letter-spacing: 4px;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
     font-family: 'Josefin Sans', sans-serif;
   }
 
@@ -214,6 +220,10 @@ a:active{
   height: 40px;
   float: right;
   }
+.cn:hover{
+  box-shadow:  0 6px 10px 0 #8f8f8f;
+
+}
   .sda{
     border-radius: 10px;
     
@@ -249,8 +259,11 @@ a:active{
 
 
 .cv{
+  display: flex;
+  
+  /* align-items: flex-end; */
   font-family: 'Rubik Microbe', cursive;
-  display: block;
+  
   background: transparent;
   width: 7rem;
   height: 40px;
@@ -260,13 +273,15 @@ a:active{
   color: rgb(244, 238, 238);
   border: 2px solid rgb(245, 242, 242);
   letter-spacing: 2px;
-  text-align: center;
+  /* text-align: center; */
   position: relative;
   transition: all .35s;
   border-radius: 10px;
   margin-bottom:20rem;
-  margin-top: 1rem;
-  margin-left: 60%;
+  margin-top: 2rem;
+  align-items: center;
+  
+  /* margin-left: 60%; */
 }
 .space{
   margin-bottom:20rem;
@@ -388,8 +403,8 @@ a:active{
 
 
 svg text {
-  /* font-family: Lora; */
-  letter-spacing: 10px;
+  position: static;
+  letter-spacing: 3px;
   stroke: #ffffff;
   /* font-size: 200px; */
   /* font-weight: 900; */
@@ -398,29 +413,38 @@ svg text {
   
   
   
+  
  
-  animation: textAnimate 5s infinite ;
+  animation: textAnimate 5s infinite alternate ;
   /* animation-iteration-count: 1; */
   
 }
+
+
+
 svg{
-  position:relative;
-  margin-left: -10px;
-  padding: 0;
+  position: relative;
+ 
+  /* margin-left: -11%; */
+  /* padding: 0; */
+  width: 100%;
+}
+.text1{
+  /* width: 40rem; */
 }
 
 @keyframes textAnimate {
   0% {
-    stroke-dasharray: 0 50%;
-    stroke-dashoffset:  20%;
-    fill:transparent;
+    stroke-dasharray: 0 90%;
+    stroke-dashoffset:  10%;
+    fill:hsl(189, 68%, 75%)
 
   }
   
   100% {
-    stroke-dasharray: 50% 0;
+    stroke-dasharray: 90% 0;
     stroke-dashoffstet: -20%;
-    fill:#ffffff;
+    fill: hsla(189, 68%, 75%,0%)
   }
   
 }
@@ -577,7 +601,7 @@ svg{
   .navbar .icon {
     display: none;
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 780px) {
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
       float: right;
@@ -587,8 +611,52 @@ svg{
    
   
   }
+
+
+
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 20rem;
+  column-gap: 3rem;
+  row-gap: 2rem;
   
-  @media screen and (max-width: 1000px) {
+  /* width: 50rem; */
+  margin: auto;
+  width: 40%;
+  margin-top: 5rem;
+  padding-bottom: 10rem;
+
+}
+.project{
+  font-size: 1.5rem;
+  background: transparent;
+  background: linear-gradient(to bottom, rgb(237, 238, 239), rgba(255, 122, 89,0));
+  opacity: 0.8;
+  border-radius: 10px;
+  padding: 1rem;
+  
+}
+.shot{
+  width: 20rem;
+  height: 15rem;
+  border-radius: 10px;
+  box-shadow:  0 6px 6px 0 #888888;
+
+}
+.shot:hover{
+  box-shadow:  0 6px 20px 0 #d3d2d2;
+}
+.code{
+  color:rgb(78, 78, 78);
+  margin-left: -6px;
+  padding-top: 20px;
+}
+
+
+  
+  @media screen and (max-width: 780px) {
     .navbar.responsive {position: relative;}
     .navbar.responsive .icon {
       /* position: absolute; */
@@ -607,19 +675,36 @@ svg{
       display: flex;
      flex-wrap: wrap;
      align-items: center;
+          
 
     }
     .box2{
+      display: flex;
+  flex-direction: column;
       margin-left: 50%;
+    }
+    /* .hello{ */
+      /* font-size: 1.5rem;
+      font-family: 'Spartan', sans-serif;
+    } */
+    .selfie{
+      margin-left: -50px;
     }
     .hello{
       font-size: 3rem;
     }
-    .selfie{
-      margin-left: -50px;
+    #hello_id{
+      font-size: 4.5rem;
     }
-   
-    
+   .wrapper{
+     /* display: flex; */
+    margin: 5%;
+   }
+   .wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+   }
     
   }
   /* @media (orientation: landscape) {
