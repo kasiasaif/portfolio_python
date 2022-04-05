@@ -421,6 +421,15 @@ svg{
   margin-left: -6px;
   padding-top: 20px;
 }
+.error{
+  display: flex;
+ justify-content: center;
+/* padding-top: 10rem; */
+}
+.space2{
+  padding-bottom: 40rem;
+}
+
 
 
   
