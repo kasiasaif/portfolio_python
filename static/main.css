@@ -99,6 +99,12 @@ a:active{
   width: 40rem;
   
   }
+  .about2{
+    font-size: larger;
+  font-size: 25px;
+  padding-top: 30px;
+  width: 30rem;
+  }
 .dev{
   
   font-size: 25px;
@@ -167,8 +173,8 @@ span{
   margin-top: 2rem;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  margin-left: 55%;
+  /* flex-direction: row; */
+  margin-left: 75%;
  
 }
 .space{
@@ -270,6 +276,7 @@ span{
 
 
 svg text {
+ 
   position: static;
   letter-spacing: 3px;
   stroke: #ffffff;
@@ -283,7 +290,7 @@ svg text {
 
 svg{
   position: relative;
-  /* margin-left: -11%; */
+  margin-left: -15%;
   /* padding: 0; */
   width: 100%;
 }
@@ -484,6 +491,13 @@ svg{
    .wrapper{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+
+   }
+   .cv{
+     margin-left: 55%;
+   }
+   svg{
+     margin-left: 5%;
 
    }
     
