@@ -159,13 +159,17 @@ span{
   color: rgb(244, 238, 238);
   border: 2px solid rgb(245, 242, 242);
   letter-spacing: 2px;
-  /* text-align: center; */
+  
   position: relative;
   transition: all .35s;
   border-radius: 10px;
   margin-bottom:20rem;
   margin-top: 2rem;
+  justify-content: center;
   align-items: center;
+  flex-direction: row;
+  margin-left: 55%;
+ 
 }
 .space{
   margin-bottom:20rem;
